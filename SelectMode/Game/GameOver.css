@@ -1,0 +1,216 @@
+:root{
+    --pink: #fd79a8;
+    --lightBlack: #353b48;
+    --silver: #bdc3c7;
+    --darkBlue: #34495e;
+    --white: #ced6e0;
+}
+
+.main-div-gameover{
+    display: none;
+    margin: auto 0;
+    padding: 10px 0px;
+    width: 35%;
+    height: auto;
+    border: 8px dotted var(--silver);
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: var(--lightBlack);
+    animation-name: border;
+    animation-duration: 0.85s;
+    animation-delay: 0.02ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.heading{
+    text-align: center;
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 35px;
+    text-shadow: 2px 2px 0 var(--pink), 2px -2px 0 var(--pink), -2px 2px 0 var(--pink), -2px -2px 0 var(--pink), 2px 0px 0 var(--pink), 0px 2px 0 var(--pink), -2px 0px 0 var(--pink), 0px -2px 0 var(--pink);
+    font-family: 'Silkscreen', sans-serif;
+    color: var(--darkBlue);
+}
+
+.won-div{
+    text-align: center;
+    margin: 50px 0 15px 0;
+    padding: 0;
+    font-size: 28px;
+    text-shadow: 2px 2px 0 var(--pink), 2px -2px 0 var(--pink), -2px 2px 0 var(--pink), -2px -2px 0 var(--pink), 2px 0px 0 var(--pink), 0px 2px 0 var(--pink), -2px 0px 0 var(--pink), 0px -2px 0 var(--pink);
+    font-family: 'Silkscreen', sans-serif;
+    color: var(--white);
+}
+
+.icons{
+    margin: 10px 0;
+    padding: 10px 0;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.icons #replay{
+    height: 30px;
+    width: 30px;
+    margin: 8px 6px;
+    padding: 4px;
+    border: 3px solid var(--pink);
+    border-radius: 8px;
+    color: var(--pink);
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.icons #replay:hover{
+    background-color: var(--lightBlack);
+    transition: all;
+    transition-duration: 0.25s;
+    transition-delay: 0.02ms;
+    transition-timing-function: ease-in-out;
+}
+
+.icons #home{
+    height: 30px;
+    width: 30px;
+    margin: 8px 6px;
+    padding: 4px;
+    border: 3px solid var(--pink);
+    border-radius: 8px;
+    columns: var(--pink);
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.icons #home:hover{
+    background-color: var(--lightBlack);
+    transition: all;
+    transition-duration: 0.25s;
+    transition-delay: 0.02ms;
+    transition-timing-function: ease-in-out;
+}
+
+/* Animations */
+@keyframes  border {
+    0% {border-top: 8px dotted var(--silver); border-right: 8px dotted var(--silver); border-bottom: 8px dotted var(--silver); border-left: 8px dotted var(--silver);}
+    25% {border-top: 8px dotted var(--pink); border-right: 8px dotted var(--lightBlack); border-bottom: 8px dotted var(--silver); border-left: 8px dotted var(--silver);}
+    50% {border-top: 8px dotted var(--silver); border-right: 8px dotted var(--pink); border-bottom: 8px dotted var(--lightBlack); border-left: 8px dotted var(--silver);}
+    75% {border-top: 8px dotted var(--silver); border-right: 8px dotted var(--silver); border-bottom: 8px dotted var(--pink); border-left: 8px dotted var(--lightBlack);}
+    100% {border-top: 8px dotted var(--lightBlack); border-right: 8px dotted var(--silver); border-bottom: 8px dotted var(--silver); border-left: 8px dotted var(--pink);}
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
+    .main-div-gameover{
+        width: 42%;
+        border: 10px dotted var(--silver);
+    }
+
+    .heading{
+        font-size: 38px;
+    }
+
+    .won-div{
+        font-size: 30px;
+        margin: 35px 0 18px 0;
+    }
+
+    .icons #replay{
+        height: 35px;
+        width: 35px;
+    }
+
+    .icons #home{
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main-div-gameover{
+        width: 50%;
+    }
+
+    .heading{
+        font-size: 32px;
+    }
+
+    .won-div{
+        font-size: 26px;
+    }
+
+    .icons #replay{
+        height: 30px;
+        width: 30px;
+        margin: 6px 8px;
+    }
+
+    .icons #home{
+        height: 30px;
+        width: 30px;
+        margin: 6px 8px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .main-div-gameover{
+        width: 70%;
+        border: 6px dotted var(--silver);
+    }
+
+    .heading{
+        font-size: 30px;
+    }
+
+    .won-div{
+        font-size: 25px;
+    }
+
+    .icons #replay{
+        height: 28px;
+        width: 28px;
+        border: 2px solid var(--pink);
+        margin: 5px;
+    }
+
+    .icons #home{
+        height: 28px;
+        width: 28px;
+        border: 2px solid var(--pink);
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main-div-gameover{
+        width: 85%;
+        border: 5px dotted var(--silver);
+        padding: 8px 0px;
+    }
+
+    .heading{
+        font-size: 28px;
+        margin: 8px 0 0 0;
+    }
+
+    .won-div{
+        font-size: 24px;
+        margin: 30px 0 12px 0;
+    }
+
+    .icons{
+        margin: 8px 0;
+        padding: 8px 0;
+    }
+
+    .icons #replay{
+        height: 26px;
+        width: 26px;
+    }
+
+    .icons #home{
+        height: 26px;
+        width: 26px;
+    }
+}

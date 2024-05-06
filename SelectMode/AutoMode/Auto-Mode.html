@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="Auto-Mode.css">
+
+    <!-- CSS FRONT PAGE FILE FOR RESPONSIVE BACKGROUND IMAGE -->
+    <link rel="stylesheet" href="../../FrontPage.css">
+
+    <!-- GOOGLE FONTS -->
+    <!-- FONT 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik+Doodle+Shadow&family=Silkscreen&display=swap" rel="stylesheet">
+    <!-- FONT 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+    <!-- FONT 3 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+
+    <!-- FAVICON HTML CODE -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../FavIcon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../FavIcon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../FavIcon/favicon-16x16.png">
+    <link rel="manifest" href="../../FavIcon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <div class="main-div-auto-mode">
+        <div class="sub-div-auto-mode">
+            <h2> Pick Your Tic-Tac </h2>
+            <div class="div-1">
+                <span id="X" onclick="pickTicTac('#ecf0f1', '#079992', '#3d3d3d', 'X', 'O')">X</span>
+                <span id="O" onclick="pickTicTac('#ecf0f1', '#ff793f', '#3d3d3d', 'O', 'X')">O</span>
+            </div>
+
+            <div class="div-2">
+                <span id="showMessage"> * Max. 16 Characters </span>
+                <label for="Name" class="enter-name-head"> Player Name </label>
+                <input type="text" placeholder="User" value="User" id="user-name">
+            </div>
+
+            <button type="button" id="start-btn" onclick="start()"> <a id="start-btn-anchor-tag"> Start <img src="../../Images/circle-play-regular.svg" alt="svg"> </a> </button>
+        </div>
+    </div>
+</body>
+</html>
+
+    <!-- JS FILE -->
+    <script src="Auto-Mode.js"></script>
+    <noscript> Please Enable Javascript! </noscript>

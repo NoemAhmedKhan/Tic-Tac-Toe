@@ -1,0 +1,292 @@
+:root {
+    --c1: #2d3436;
+    --c2: #636e72;
+    --c3: #f1f2f6;
+    --c4: #b2bec3;
+    --c5: #079992;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--c1);
+    display: flex;
+    justify-content: center;
+}
+
+.main-div-game {
+    background-color: var(--c2);
+    height: 100%;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+}
+
+.show-name-timer-div {
+    background-color: var(--c5);
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.show-name-timer-div  #player-name {
+    width: 75%;
+    color: var(--c3);
+    font-size: 50px;
+    font-family: 'Silkscreen', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px 0px;
+}
+
+.timer-div {
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.timer-div  #timer {
+    color: var(--c2);
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Preahvihear', sans-serif;
+    margin: 6px 0px 0px 0px;
+}
+
+.timer-div  #clock {
+    height: 35px;
+    width: 35px;
+    padding: 4px 0px;
+}
+
+.boxes-div-game {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--c3);
+    font-size: 200px;
+    font-family: 'Silkscreen', sans-serif;
+    cursor: pointer;
+}
+
+.boxes:hover {
+    background-color: var(--c4);
+    transition-property:  all;
+    transition-duration: 0.18s;
+    transition-delay: 0.05ms;
+    transition-timing-function: ease-in;
+}
+
+
+/* MEDIA QUERIES */
+
+/* 1. Max-Width */
+@media only screen and (max-width: 1600px) {
+    .main-div-game {
+        width: 75%;
+    }
+    
+    .show-name-timer-div  #player-name {
+        font-size: 45px;
+    }
+    
+    .timer-div {
+        border-radius: 18px 0px 0px 18px;
+    }
+    
+    .timer-div  #timer {
+        font-size: 27px;
+    }
+    
+    .timer-div  #clock {
+        height: 33px;
+        width: 33px;
+    }
+    
+    .boxes {
+        font-size: 190px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .main-div-game {
+        width: 70%;
+    }
+    
+    .show-name-timer-div  #player-name {
+        font-size: 44px;
+    }
+    
+    .timer-div {
+        border-radius: 16px 0px 0px 16px;
+    }
+    
+    .timer-div  #timer {
+        font-size: 26px;
+    }
+    
+    .timer-div  #clock {
+        height: 32px;
+        width: 32px;
+    }
+    
+    .boxes {
+        font-size: 170px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .main-div-game {
+        width: 80%;
+    }
+    
+    .show-name-timer-div  #player-name {
+        font-size: 40px;
+    }
+    
+    .timer-div {
+        border-radius: 14px 0px 0px 14px;
+    }
+    
+    .timer-div  #timer {
+        font-size: 25px;
+    }
+    
+    .timer-div  #clock {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .boxes {
+        font-size: 150px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-div-game {
+        margin: 15% 0% 0% 0%;
+        width: 85%;
+    }
+    
+    .show-name-timer-div  #player-name {
+        font-size: 37px;
+    }
+    
+    .timer-div {
+        border-radius: 12px 0px 0px 12px;
+    }
+    
+    .timer-div  #timer {
+        font-size: 23px;
+    }
+    
+    .timer-div  #clock {
+        height: 28px;
+        width: 28px;
+    }
+    
+    .boxes {
+        font-size: 130px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .main-div-game {
+        margin: 30% 0% 0% 0%;
+        width: 90%;
+    }
+    
+    .show-name-timer-div  #player-name {
+        padding: 6px 0px;
+        font-size: 34px;
+    }
+
+    .timer-div {
+        width: 27%;
+    }
+    
+    .timer-div  #timer {
+        font-size: 20px;
+        margin: 4px 0px 0px 0px;
+    }
+    
+    .timer-div  #clock {
+        height: 25px;
+        width: 25px;
+        padding: 2px 0px;
+    }
+    
+    .boxes {
+        font-size: 100px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .main-div-game {
+        margin: 35% 0% 0% 0%;
+        width: 99%;
+    }
+    
+    .show-name-timer-div  #player-name {
+        padding: 8px 0px;
+        font-size: 30px;
+    }
+    
+    .timer-div {
+        width: 32%;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .timer-div  #timer {
+        font-size: 18px;
+        margin: 4px 0px 0px 0px;
+    }
+    
+    .timer-div  #clock {
+        height: 22px;
+        width: 22px;
+        padding: 2px 0px;
+    }
+    
+    .boxes {
+        font-size: 80px;
+    }
+}
+
+/* MEDIA QUERIES */
+
+/* 2. Max-Height */
+@media only screen and (max-height: 800px) {
+    .boxes {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .main-div-game {
+        margin: 16% 0% 0% 0%;
+    }
+}

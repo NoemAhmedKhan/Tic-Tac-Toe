@@ -1,0 +1,363 @@
+:root {
+    --c1: #00a8ff;
+    --c2: #f5f6fa;
+    --c3: #8854d0;
+    --c4: #badc58;
+    --c5: #ecf0f1;
+    --c6: #079992;
+    --c7: #16a085;
+    --c8: #ee5253;
+    --c9: #ff6b6b;
+    --c10: #3d3d3d;
+    --c11: #7d5fff;
+    --c12: #0fb9b1;
+    --c13: #ff793f;
+    --c14: #FF0266;
+}
+
+.main-div-2-player-mode {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 820px;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+}
+
+.sub-div-2-player-mode {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sub-div-2-player-mode  .player-1 {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-div-2-player-mode  .player-2 {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-name-div {
+    width: 80%;
+    color: var(--c5);
+    background-color: var(--c12);
+    border: 4px solid var(--c11);
+    border-radius: 20px;
+    margin: 18% 0% 0% 0%;
+    padding: 12px 15px;
+    font-size: 28px;
+    box-shadow: 0px 0px 21px 2px rgba(87,77,77,0.76);
+   -webkit-box-shadow: 0px 0px 21px 2px rgba(87,77,77,0.76);
+   -moz-box-shadow: 0px 0px 21px 2px rgba(87,77,77,0.76);
+    text-shadow: 2px 2px 0 var(--c11), 2px -2px 0 var(--c11), -2px 2px 0 var(--c11), -2px -2px 0 var(--c11), 2px 0px 0 var(--c11), 0px 2px 0 var(--c11), -2px 0px 0 var(--c11), 0px -2px 0 var(--c11);
+    font-family: 'Silkscreen', sans-serif;
+}
+
+.player-name-div  .showMessage{
+    display: none;
+    color: var(--c14);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Preahvihear', sans-serif;
+    text-shadow: 2px 1px 0 var(--c5);
+    margin: 2px 0 4px 0;
+    padding: 0;
+}
+
+.player-name-div  input {
+    background-color: var(--c5);
+    border: 2px solid var(--c10);
+    height: 20px;
+    width: 55%;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px;
+    font-size: 18px;
+    font-family: 'Preahvihear', sans-serif;
+}
+
+.sub-div-2-player-mode  h2 {
+    text-align: center;
+    color: var(--c5);
+    background-color: var(--c12);
+    border: 4px solid var(--c11);
+    height: auto;
+    width: 70%;
+    border-radius: 20px;
+    padding: 8px 4px;
+    margin: 18% 0% 0% 0%;
+    font-size: 30px;
+    box-shadow: 0px 0px 21px 2px rgba(87,77,77,0.76);
+   -webkit-box-shadow: 0px 0px 21px 2px rgba(87,77,77,0.76);
+   -moz-box-shadow: 0px 0px 21px 2px rgba(87,77,77,0.76);
+    text-shadow: 2px 2px 0 var(--c11), 2px -2px 0 var(--c11), -2px 2px 0 var(--c11), -2px -2px 0 var(--c11), 2px 0px 0 var(--c11), 0px 2px 0 var(--c11), -2px 0px 0 var(--c11), 0px -2px 0 var(--c11);
+    font-family: 'Silkscreen', sans-serif;
+}
+
+.sub-div-2-player-mode  .span-div {
+    width: 100%;
+    height: auto;
+    margin: 10% 0% 0% 0%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.span-div  span {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    height: 44px;
+    background-color: var(--c5);
+    border: 4px solid var(--c10);
+    font-size: 30px;
+    font-family: 'Silkscreen', sans-serif;
+    cursor: pointer;
+}
+
+#X1, #X2 {
+    color: var(--c6);
+}
+
+#O1, #O2 {
+    color: var(--c13);
+}
+
+
+@keyframes animate {
+    0% { border-left: 4px dotted var(--c2); border-top: 4px dotted var(--c2); border-right: 4px dotted var(--c2); border-bottom: 4px dotted var(--c2); }
+    25% { border-left: 4px dotted var(--c2); border-top: 4px dotted var(--c10); border-right: 4px dotted var(--c10); border-bottom: 4px dotted var(--c10); }
+    50% { border-left: 4px dotted var(--c10); border-top: 4px dotted var(--c2); border-right: 4px dotted var(--c10); border-bottom: 4px dotted var(--c10); }
+    75% { border-left: 4px dotted var(--c10); border-top: 4px dotted var(--c10); border-right: 4px dotted var(--c2); border-bottom: 4px dotted var(--c10); }
+    100% { border-left: 4px dotted var(--c10); border-top: 4px dotted var(--c10); border-right: 4px dotted var(--c10); border-bottom: 4px dotted var(--c2); }
+}
+
+.sub-div-2-player-mode  button {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 8px;
+    font-size: 28px;
+    height: 8%;
+    width: auto;
+    font-family: 'Silkscreen', sans-serif;
+    border-radius: 14px;
+    border: 4px solid var(--c10);
+    background-color: var(--c11);
+    box-shadow: 0px 0px 21px 2px rgba(87,77,77,0.76);
+    -webkit-box-shadow: 0px 0px 21px 2px rgba(87,77,77,0.76);
+    -moz-box-shadow: 0px 0px 21px 2px rgba(87,77,77,0.76);
+    cursor: pointer;
+}
+
+.sub-div-2-player-mode  button:hover {
+    animation-name: animate;
+    animation-duration: 0.65s;
+    animation-delay: 0.07ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    border: 4px dotted var(--c2);
+    background-color: var(--c12);
+    transition-property:  all;
+    transition-duration: 0.26s;
+    transition-delay: 0.05ms;
+    transition-timing-function: ease-in;
+    transform: scale(1.04);
+}
+
+.sub-div-2-player-mode  button:hover  a{
+    text-shadow: 2px 2px 0 var(--c11), 2px -2px 0 var(--c11), -2px 2px 0 var(--c11), -2px -2px 0 var(--c11), 2px 0px 0 var(--c11), 0px 2px 0 var(--c11), -2px 0px 0 var(--c11), 0px -2px 0 var(--c11);
+    transition-property:  all;
+    transition-duration: 0.26s;
+    transition-delay: 0.05ms;
+    transition-timing-function: ease-in;
+}
+
+.sub-div-2-player-mode  button  a {
+    text-decoration: none;
+    color: var(--c2);
+    text-shadow: 2px 2px 0 var(--c12), 2px -2px 0 var(--c12), -2px 2px 0 var(--c12), -2px -2px 0 var(--c12), 2px 0px 0 var(--c12), 0px 2px 0 var(--c12), -2px 0px 0 var(--c12), 0px -2px 0 var(--c12);
+}
+
+.sub-div-2-player-mode  button  a  img{
+    height: 22px;
+    width: 22px;
+}
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1717px) {
+    .player-name-div  input {
+        height: 20px;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-div-2-player-mode {
+        height: 800px;
+    }
+
+    .player-name-div {
+        font-size: 26px;
+    }
+    
+    .player-name-div  input {
+        width: 95%;
+        font-size: 17px;
+    }
+
+    .sub-div-2-player-mode  h2 {
+        width: 80%;
+        padding: 6px 4px;
+        font-size: 27px;
+    }
+    
+    .span-div  span {
+        width: 40%;
+        height: 40px;
+        font-size: 26px;
+    }
+
+    .sub-div-2-player-mode  button {
+        font-size: 26px;
+    }
+    
+    .sub-div-2-player-mode  button  a  img{
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .main-div-2-player-mode {
+        height: 700px;
+        width: 75%;
+    }
+
+    .player-name-div {
+        border-radius: 15px;
+        padding: 10px 15px;
+        font-size: 24px;
+    }
+
+    .player-name-div  .showMessage{
+        font-size: 16px;
+    }
+    
+    .player-name-div  input {
+        font-size: 16px;
+    }
+    
+    .sub-div-2-player-mode  h2 {
+        width: 80%;
+        border-radius: 15px;
+        padding: 6px 4px;
+        margin: 20% 0% 0% 0%;
+        font-size: 26px;
+    }
+    
+    .sub-div-2-player-mode  .span-div {
+        margin: 12% 0% 0% 0%;
+    }
+    
+    .span-div  span {
+        width: 40%;
+        height: 38px;
+        border: 3px solid var(--c10);
+        font-size: 26px;
+    }
+
+    .sub-div-2-player-mode  button {
+        padding: 8px 6px;
+        font-size: 24px;
+        border-radius: 12px;
+        border: 3px solid var(--c10);
+    }
+    
+    .sub-div-2-player-mode  button  a  img{
+        height: 19px;
+        width: 19px;
+        margin: 0px 6px 0px 0px;
+    }
+
+    @media only screen and (max-width: 650px) {
+        .main-div-2-player-mode {
+            height: auto;
+        }
+
+        .sub-div-2-player-mode {
+            display: flex;
+            justify-content: center;
+        }
+
+        .sub-div-2-player-mode  .player-1 {
+            margin: 8% 0% 0% 0%;
+            width: 90%;
+        }
+        
+        .sub-div-2-player-mode  .player-2 {
+            margin: 8% 0% 0% 0%;
+            width: 90%;
+        }
+    
+        .player-name-div {
+            width: 90%;
+            font-size: 28px;
+            margin: 12% 0% 0% 0%;
+        }
+
+        .player-name-div  .showMessage{
+            font-size: 15px;
+        }
+        
+        .player-name-div  input {
+            font-size: 18px;
+        }
+        
+        .sub-div-2-player-mode  h2 {
+            width: 90%;
+            margin: 6% 0% 0% 0%;
+            padding: 12px 8px;
+            font-size: 28px;
+        }
+        
+        .sub-div-2-player-mode  .span-div {
+            margin: 6% 0% 0% 0%;
+        }
+        
+        .span-div  span {
+            width: 40%;
+            height: 36px;
+            border: 2px solid var(--c10);
+        }
+    
+        .sub-div-2-player-mode  button {
+            margin: 10% auto 4% auto;
+            font-size: 25px;
+            border: 2px solid var(--c10);
+        }
+        
+        .sub-div-2-player-mode  button  a  img{
+            height: 18px;
+            width: 18px;
+        }
+    }
+
+
+}
+

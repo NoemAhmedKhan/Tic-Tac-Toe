@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="../Game.css">
+    <link rel="stylesheet" href="../GameOver.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik+Doodle+Shadow&family=Silkscreen&display=swap" rel="stylesheet">
+
+    <!-- FAVICON HTML CODE -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../FavIcon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../FavIcon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../FavIcon/favicon-16x16.png">
+    <link rel="manifest" href="../../../FavIcon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title> Tic-Tac-Toe </title>
+</head>
+<body>
+    <!-- MAIN GAME CONTENT -->
+    <div class="main-div-game" id="main-game-div">
+        <div class="show-name-timer-div">
+            <div id="player-name"> </div>
+            <div class="timer-div"> <div id="timer">  </div> <img id="clock" src="../Icons/clock.gif" alt="svg"> </div>
+        </div>
+
+        <div class="boxes-div-game">
+            <span class="boxes" id="1" onclick="tic(1)">-</span>
+            <span class="boxes" id="2" onclick="tic(2)">-</span>
+            <span class="boxes" id="3" onclick="tic(3)">-</span>
+            <span class="boxes" id="4" onclick="tic(4)">-</span>
+            <span class="boxes" id="5" onclick="tic(5)">-</span>
+            <span class="boxes" id="6" onclick="tic(6)">-</span>
+            <span class="boxes" id="7" onclick="tic(7)">-</span>
+            <span class="boxes" id="8" onclick="tic(8)">-</span>
+            <span class="boxes" id="9" onclick="tic(9)">-</span>
+        </div>
+    </div>
+
+    <!-- GAME OVER CONTENT -->
+    <div class="main-div-gameover" id="main-gameover-div">
+        <h2 class="heading"> Game Over </h2>
+        <div class="won-div" id="win-div">
+            
+        </div>
+        <div class="icons">
+            <img src="../Icons/reload-icon.svg" alt="replay" id="replay" onclick="replay()">
+            <img src="../Icons/home-icon.svg" alt="home" id="home" onclick="home()">
+        </div>
+    </div>
+</body>
+</html>
+
+
+    <!-- JS FILE -->
+    <script src="2PlayerModeGame.js"></script>
+    <noscript> Please Enable Javascript! </noscript>

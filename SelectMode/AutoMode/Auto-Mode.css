@@ -1,0 +1,340 @@
+:root {
+    --c1: #00a8ff;
+    --c2: #f5f6fa;
+    --c3: #8854d0;
+    --c4: #badc58;
+    --c5: #ecf0f1;
+    --c6: #079992;
+    --c7: #16a085;
+    --c8: #ee5253;
+    --c9: #ff6b6b;
+    --c10: #3d3d3d;
+    --c11: #7d5fff;
+    --c12: #0fb9b1;
+    --c13: #ff793f;
+    --c14: #FF0266;
+}
+
+.main-div-auto-mode {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 820px;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub-div-auto-mode {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.sub-div-auto-mode h2 {
+    text-align: center;
+    color: var(--c5);
+    background-color: var(--c12);
+    border: 4px solid var(--c11);
+    height: 50px;
+    width: 50%;
+    border-radius: 20px;
+    padding: 5px 0px 0px 0px;
+    margin: 4% auto;
+    font-size: 30px;
+    box-shadow: 0px 0px 21px 2px rgba(87,77,77,0.76);
+   -webkit-box-shadow: 0px 0px 21px 2px rgba(87,77,77,0.76);
+   -moz-box-shadow: 0px 0px 21px 2px rgba(87,77,77,0.76);
+    text-shadow: 2px 2px 0 var(--c11), 2px -2px 0 var(--c11), -2px 2px 0 var(--c11), -2px -2px 0 var(--c11), 2px 0px 0 var(--c11), 0px 2px 0 var(--c11), -2px 0px 0 var(--c11), 0px -2px 0 var(--c11);
+    font-family: 'Silkscreen', sans-serif;
+}
+
+.sub-div-auto-mode  .div-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-div-auto-mode  .div-1  span {
+    display: inline-block;
+    text-align: center;
+    width: 18%;
+    height: 44px;
+    background-color: var(--c5);
+    border: 4px solid var(--c10);
+    font-size: 30px;
+    font-family: 'Silkscreen', sans-serif;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+#X {
+    color: var(--c6);
+}
+
+#O {
+    color: var(--c13);
+}
+
+.sub-div-auto-mode  .div-2 {
+    color: var(--c5);
+    background-color: var(--c12);
+    border: 4px solid var(--c11);
+    height: auto;
+    width: 60%;
+    border-radius: 20px;
+    padding: 15px 10px;
+    margin: 10% auto 0px auto;
+    font-size: 28px;
+    box-shadow: 0px 0px 21px 2px rgba(87,77,77,0.76);
+   -webkit-box-shadow: 0px 0px 21px 2px rgba(87,77,77,0.76);
+   -moz-box-shadow: 0px 0px 21px 2px rgba(87,77,77,0.76);
+    text-shadow: 2px 2px 0 var(--c11), 2px -2px 0 var(--c11), -2px 2px 0 var(--c11), -2px -2px 0 var(--c11), 2px 0px 0 var(--c11), 0px 2px 0 var(--c11), -2px 0px 0 var(--c11), 0px -2px 0 var(--c11);
+    font-family: 'Silkscreen', sans-serif;
+}
+
+.sub-div-auto-mode  .div-2  #showMessage{
+    display: none;
+    color: var(--c14);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Preahvihear', sans-serif;
+    text-shadow: 2px 1px 0 var(--c5);
+    margin: 2px 0 4px 0;
+    padding: 0;
+}
+
+.sub-div-auto-mode  .div-2  input{
+    background-color: var(--c5);
+    border: 2px solid var(--c10);
+    height: 20px;
+    width: 50%;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px;
+    font-size: 18px;
+    font-family: 'Preahvihear', sans-serif;
+}
+
+
+@keyframes animate {
+    0% { border-left: 4px dotted var(--c2); border-top: 4px dotted var(--c2); border-right: 4px dotted var(--c2); border-bottom: 4px dotted var(--c2); }
+    25% { border-left: 4px dotted var(--c2); border-top: 4px dotted var(--c10); border-right: 4px dotted var(--c10); border-bottom: 4px dotted var(--c10); }
+    50% { border-left: 4px dotted var(--c10); border-top: 4px dotted var(--c2); border-right: 4px dotted var(--c10); border-bottom: 4px dotted var(--c10); }
+    75% { border-left: 4px dotted var(--c10); border-top: 4px dotted var(--c10); border-right: 4px dotted var(--c2); border-bottom: 4px dotted var(--c10); }
+    100% { border-left: 4px dotted var(--c10); border-top: 4px dotted var(--c10); border-right: 4px dotted var(--c10); border-bottom: 4px dotted var(--c2); }
+}
+
+.sub-div-auto-mode  button {
+    display: block;
+    text-align: center;
+    margin: 12% auto 0% auto;
+    padding: 10px 8px;
+    font-size: 28px;
+    height: auto;
+    width: auto;
+    font-family: 'Silkscreen', sans-serif;
+    border-radius: 14px;
+    border: 4px solid var(--c10);
+    background-color: var(--c11);
+    box-shadow: 0px 0px 21px 2px rgba(87,77,77,0.76);
+    -webkit-box-shadow: 0px 0px 21px 2px rgba(87,77,77,0.76);
+    -moz-box-shadow: 0px 0px 21px 2px rgba(87,77,77,0.76);
+    cursor: pointer;
+}
+
+.sub-div-auto-mode  button:hover {
+    animation-name: animate;
+    animation-duration: 0.65s;
+    animation-delay: 0.07ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    border: 4px dotted var(--c2);
+    background-color: var(--c12);
+    transition-property:  all;
+    transition-duration: 0.26s;
+    transition-delay: 0.05ms;
+    transition-timing-function: ease-in;
+    transform: scale(1.04);
+}
+
+.sub-div-auto-mode  button:hover  a{
+    text-shadow: 2px 2px 0 var(--c11), 2px -2px 0 var(--c11), -2px 2px 0 var(--c11), -2px -2px 0 var(--c11), 2px 0px 0 var(--c11), 0px 2px 0 var(--c11), -2px 0px 0 var(--c11), 0px -2px 0 var(--c11);
+    transition-property:  all;
+    transition-duration: 0.26s;
+    transition-delay: 0.05ms;
+    transition-timing-function: ease-in;
+}
+
+.sub-div-auto-mode  button  a {
+    text-decoration: none;
+    color: var(--c2);
+    text-shadow: 2px 2px 0 var(--c12), 2px -2px 0 var(--c12), -2px 2px 0 var(--c12), -2px -2px 0 var(--c12), 2px 0px 0 var(--c12), 0px 2px 0 var(--c12), -2px 0px 0 var(--c12), 0px -2px 0 var(--c12);
+}
+
+.sub-div-auto-mode  button  a  img{
+    height: 22px;
+    width: 22px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1450px) {
+    .sub-div-auto-mode  .div-2  input{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-div-auto-mode {
+        height: 800px;
+    }
+
+    .sub-div-auto-mode h2{
+        height: auto;
+        width: 70%;
+        padding: 6px 0px;
+        font-size: 27px;
+    }
+
+    .sub-div-auto-mode  .div-2 {
+        width: 75%;
+        padding: 15px 6px;
+        font-size: 25px;
+    }
+
+    .sub-div-auto-mode  .div-2  input{
+        width: 45%;
+        font-size: 16px;
+    }
+
+    .sub-div-auto-mode  button {
+        font-size: 26px;
+    }
+    
+    .sub-div-auto-mode  button  a  img{
+        height: 21px;
+        width: 21px;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .main-div-auto-mode {
+        width: 70%;
+        height: 620px;
+    }
+
+    .sub-div-auto-mode h2{
+        width: 80%;
+        padding: 5px 0px;
+        font-size: 25px;
+    }
+
+    .sub-div-auto-mode  .div-1  span {
+        width: 25%;
+        height: 36px;
+        border: 3px solid var(--c10);
+        font-size: 25px;
+    }
+
+    .sub-div-auto-mode  .div-2 {
+        width: 70%;
+        padding: 15px;
+        font-size: 23px;
+    }
+
+    .sub-div-auto-mode  .div-2  #showMessage{
+        font-size: 16px;
+    }
+
+    .sub-div-auto-mode  .div-2  input{
+        width: 80%;
+        margin: 8px 0px 0px 0px;
+    }
+
+    .sub-div-auto-mode  button {
+        font-size: 25px;
+        border: 3px solid var(--c12);
+    }
+} 
+
+@media only screen and (max-width: 650px) {
+    .main-div-auto-mode {
+        width: 100%;
+        height: 600px;
+    }
+
+    .sub-div-auto-mode h2{
+        font-size: 23px;
+        border-radius: 14px;
+        border: 3px solid var(--c11);
+        margin: 6% auto;
+    }
+
+    .sub-div-auto-mode  .div-1  span {
+        width: 27%;
+        height: 32px;
+        font-size: 23px;
+        margin: 15px 0px 0px 0px;
+    }
+
+    .sub-div-auto-mode  .div-2 {
+        width: 65%;
+        margin: 15% auto 0px auto;
+    }
+
+    .sub-div-auto-mode  .div-2  input{
+        font-size: 15px;
+        margin: 6px 0px 0px 0px;
+    }
+} 
+
+@media only screen and (max-width: 450px) {
+    .sub-div-auto-mode h2{
+        font-size: 20px;
+        border-radius: 10px;
+        border: 2px solid var(--c11);
+        margin: 8% auto;
+        padding: 6px 8px;
+    }
+
+    .sub-div-auto-mode  .div-1  span {
+        width: 30%;
+        font-size: 22px;
+    }
+
+    .sub-div-auto-mode  .div-2 {
+        width: 70%;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 14px;
+        border: 2px solid var(--c11);
+        margin: 18% auto 0px auto;
+    }
+
+    .sub-div-auto-mode  .div-2  #showMessage{
+        font-size: 14px;
+    }
+
+    .sub-div-auto-mode  .div-2  input{
+        width: 90%;
+    }
+
+    .sub-div-auto-mode  button {
+        font-size: 24px;
+        border: 2px solid var(--c12);
+        border-radius: 12px;
+        padding: 6px 8px;
+    }
+    
+    .sub-div-auto-mode  button  a  img{
+        height: 20px;
+        width: 20px;
+        margin: 6px 0px 0px 0px;
+    }
+} 

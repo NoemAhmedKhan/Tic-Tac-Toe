@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="2_Player.css">
+
+    <!-- CSS FRONT PAGE FILE FOR RESPONSIVE BACKGROUND IMAGE -->
+    <link rel="stylesheet" href="../../FrontPage.css">
+
+    <!-- GOOGLE FONTS -->
+    <!-- FONT 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik+Doodle+Shadow&family=Silkscreen&display=swap" rel="stylesheet">
+    <!-- FONT 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+    
+    <!-- FAVICON HTML CODE -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../FavIcon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../FavIcon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../FavIcon/favicon-16x16.png">
+    <link rel="manifest" href="../../FavIcon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <div class="main-div-2-player-mode">
+        <div class="sub-div-2-player-mode">
+
+            <div class="player-1">
+                <div class="player-name-div">
+                    <span id="Player_1_Show_Message" class="showMessage"> * Max. 16 Characters </span>
+                    <label for="Player_1_Name"> Player 1 </label>
+                    <input type="text" placeholder="Player_1" value="Player_1" id="player-1-name">
+                </div>
+
+                <h2> Pick One </h2>
+                <div class="span-div">
+                    <span id="X1" onclick="Pick_Tic_Tac('#ecf0f1', '#079992', '#3d3d3d', 'X1', 'O1')">X</span>
+                    <span id="O1" onclick="Pick_Tic_Tac('#ecf0f1', '#ff793f', '#3d3d3d', 'O1', 'X1')">O</span>
+                </div>
+            </div>
+
+            <div class="player-2">
+                <div class="player-name-div">
+                    <span id="Player_2_Show_Message" class="showMessage"> * Max. 16 Characters </span>
+                    <label for="Player_2_Name"> Player 2 </label>
+                    <input type="text" placeholder="Player_2" value="Player_2" id="player-2-name">
+                </div>
+
+                <h2> Pick One </h2>
+                <div class="span-div">
+                    <span id="X2" onclick="Pick_Tic_Tac('#ecf0f1', '#079992', '#3d3d3d', 'X2', 'O2')">X</span>
+                    <span id="O2" onclick="Pick_Tic_Tac('#ecf0f1', '#ff793f', '#3d3d3d', 'O2', 'X2')">O</span>
+                </div>
+            </div>
+            
+            <button type="button" id="start-btn" onclick="start()"> <a id="start-btn-anchor-tag"> Start <img src="../../Images/circle-play-regular.svg" alt="svg"> </a> </button>
+
+        </div>
+    </div>
+</body>
+</html>
+
+
+    <!-- JS FILE -->
+    <script src="2_Player.js"></script>
+    <noscript> Please Enable Javascript! </noscript>

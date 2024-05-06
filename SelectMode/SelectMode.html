@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="SelectMode.css">
+
+    <!-- CSS FRONT PAGE FILE FOR RESPONSIVE BACKGROUND IMAGE AND (TIC-TAC-TOE) HEADING -->
+    <link rel="stylesheet" href="../FrontPage.css">
+
+    <!-- JS FILE -->
+    <script src="SelectMode.js"></script>
+    <noscript> Please Enable Javascript! </noscript>
+
+    <!-- GOOGLE FONTS -->
+    <!-- FONT 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rubik+Doodle+Shadow&family=Silkscreen&display=swap" rel="stylesheet">
+    <!-- FONT 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+
+    <!-- FAVICON HTML CODE -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../FavIcon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../FavIcon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../FavIcon/favicon-16x16.png">
+    <link rel="manifest" href="../FavIcon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <div class="main-div">
+        <div class="sub-div">
+            <h1 class="tic-tac-toe-head"> Tic-Tac-Toe </h1>
+
+            <div id="mode">
+                <h1 id="mode-head"> Select Mode </h1>
+                <a href="./AutoMode/Auto-Mode.html" id="auto" onclick="selectMode('auto')"> Auto  <img src="./Images/single-player-icon.svg" alt="svg"> </a>
+                <a href="./2-PlayerMode/2_player.html" id="2-player" onclick="selectMode('2-player')"> 2 Player <img src="./Images/2-player-icon.svg" alt="svg"> </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
